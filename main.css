@@ -1,0 +1,458 @@
+body{
+	margin: 0;
+	padding: 0;
+	font: 18px/1.7 Catamaran,sans-serif;
+	background-image: url("img/bg.png");
+}
+
+.hide{
+	opacity:0 !important;
+}
+
+.show {
+	opacity: 1 !important;
+}
+
+h1,h2,h3{
+	font-family: 'Courgette', cursive;
+}
+
+.absolute{
+	position: absolute;
+    bottom: 0;
+    margin-bottom: 15vh;
+}
+
+
+#nav{
+	display: flex;
+	position: fixed;
+	align-items: center;
+	height: 100px;
+	width: 100%;
+	z-index: 100;
+	background-color: unset;
+	transition-duration: 0.5s;
+}
+
+.navScroll{
+	background-color: #34495e !important;
+}
+
+.nav-header{
+    text-shadow: 0px 0px 50px black;
+	font-family: 'Courgette', cursive;
+	font-size: 50px;
+	font-weight: 700;
+	color: white;
+	margin: 20px;
+	margin-left: 3%;
+}
+
+.nav-armsimg{
+	width: 100px;
+	height: 125px;
+	background-image: url("img/arms.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 50px;
+}
+
+
+nav{
+	margin-left: auto;
+	height: 100%;
+	color: white;
+}
+
+nav > ol{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding-right: 35px;
+	height: 100%;
+}
+
+nav>ol>li{
+	font-size: 30px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	border-top: 5px solid rgba(0,0,0,0);
+	height: 95%;
+	transition-duration: 0.5s;
+}
+nav>ol>li:hover{
+	border-top: 5px solid white;
+}
+
+nav>ol>li>a{
+	padding: 0px 15px 0px 15px;
+	text-decoration: none;
+	color: white;
+	transition-duration: 0.5s;
+
+}
+
+nav>ol>li>a>p{
+	text-shadow: 0px 0px 40px black;
+}
+
+.noShadow{
+	text-shadow: none;
+}
+
+img.centered {
+     position:fixed;
+     left: 50%;
+     top:  50%;
+     margin-left: -32px;
+     margin-top:  -32px;
+ }
+
+.main-img{
+	background-image: url("img/main.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+}
+
+.conteiner{
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.conteiner:first-child{
+	padding-bottom: 30px;
+}
+
+.welcoming-header{
+	font-size: 100px;
+	font-weight: 700;
+	margin-left: 15px;
+	color: white;
+	text-shadow: 0px 0px 50px black;
+	line-height: 120%;
+}
+
+.conteiner > h1{
+	margin: 50px auto 0px auto;
+	position: relative;
+	font-family: 'Courgette', cursive;
+	font-size: 50px;
+	max-width: 730px;
+	text-align: center;
+    color: black;
+
+}
+
+.after-line::after{
+	content: "";
+    width: 400px;
+    background-color: black;
+    height: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.border-top{
+	border-top: 98px solid transparent;
+}
+
+
+.flex-conteiner{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.item{
+	text-align: center;
+	font-size: 21px;
+	margin: 25px;
+	margin-bottom: 100px;
+	max-width: 336px;
+	padding: 15px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 50px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 50px -10px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 50px -10px rgba(0,0,0,0.75);
+	transition-duration: 0.3s;
+}
+
+.item h2{
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+.item p{
+	font-size: 18px;
+	padding: 20px;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.item:hover{
+	transform: scale(1.1);
+}
+
+.fa-calendar-check-o,.fa-futbol-o,.fa-map-o{
+	font-size: 120px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.art{
+	width: 500px;
+	height: 400px;
+	background-size: cover;
+}
+
+.first-img{
+	background-image: url("img/1.jpg");
+}
+
+.second-img{
+	background-image: url("img/2.jpg");
+}
+
+.art-text{
+	max-width: 600px;
+}
+
+.art-text p{
+	margin: 0;
+	padding: 30px;
+	padding-top: 10px;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.art-text h1{
+	text-align: center;
+	margin: 10px;
+	font-size: 40px;
+}
+
+.weather-img{
+	background-image: url("img/weather.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.osrodek-img{
+	background-image: url("img/osrodek.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.osrodek-text{
+	max-width: 500px;
+    background-color: white;
+    margin: 5vh 100px 100px auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.osrodek-text p{
+	text-align: justify;
+	text-align-last: center;
+	padding: 30px;
+	margin: 0;
+	font-size: 1.3rem;
+}
+
+.osrodek-text h1{
+	padding-top: 50px;
+	font-size: 40px;
+	margin: 0;
+}
+
+#padding-top{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	opacity: 0.8;
+}
+
+#padding-zero{
+	padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh
+}
+
+#weather-keeper{
+	width: 300px;
+}
+
+#inpl-weather-main{
+}
+
+.font-size{
+	font-size: 75px !important;
+}
+
+#map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin: 10px;
+    margin-bottom: 150px;
+}
+
+#map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+footer{
+	padding: 20px;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1300px){
+	.welcoming-header{
+		margin-left: 50px;
+	}
+	#nav ol>li{
+		font-size: 25px;
+	}
+	.osrodek-img{
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.welcoming-header{
+		font-size: 95px;
+	}
+	.nav-header{
+		font-size: 40px;
+	}
+	.nav-armsimg{
+		width: 80px;
+    	height: 100px;
+	}
+}
+
+@media only screen and (max-width: 1050px){
+	.first-img{
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 1050px){
+	nav ol{
+		display: none;
+	}
+	.osrodek-text{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.welcoming-header{
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#first-img{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	.welcoming-header{
+		font-size: 75px;
+	}
+
+	#map-responsive{
+		height: 200px;
+	}
+	.parallax-window{
+		background: fixed;
+	}
+}
+
+@media only screen and (max-width: 650px){
+
+	.osrodek-text{
+		margin: 40px;
+	}
+	#map-responsive{
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 530px){
+	.welcoming-header{
+		font-size: 65px;
+	}
+	.after-line::after{
+		width: 350px;
+	}
+	.art{
+		width: 400px;
+		height: 320px;
+	}
+	#map-responsive{
+		height: 400px;
+	}
+	.osrodek-text p{
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.welcoming-header{
+		font-size: 55px;
+	}
+
+	.conteiner > h1{
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.welcoming-header{
+		font-size: 50px;
+	}
+
+	.art {
+    width: 350px;
+    height: 280px;
+	}
+	.osrodek-text p{
+		font-size: 2vh
+	}
+	.after-line::after{
+		width: 275px;
+	}
+	.nav-header{
+		font-size: 30px;
+	}
+	#map-responsive{
+		margin: 0;
+	}
+}
